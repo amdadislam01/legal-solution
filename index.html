@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/business.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,27 +65,57 @@
 <body class="font-eb">
     <div class="main-container">
         <!-- Navigation -->
-        <nav class="bg-white py-4">
+        <nav class="bg-white py-4 px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
-                <div class="w-[158px] h-[46px]">
+                <!-- Logo -->
+                <div class="w-[100px] md:w-[158px] h-[30px] md:h-[46px]">
                     <img src="images/logo2.png" alt="logo2" class="h-full" />
                 </div>
-                <div class="flex space-x-8 items-center">
-                    <a href="#" class="text-gray-800 hover:text-[#B68C5A]">Home</a>
-                    <a href="#" class="text-gray-800 hover:text-[#B68C5A]">Services</a>
-                    <a href="#" class="text-gray-800 hover:text-[#B68C5A]">Cases</a>
-                    <a href="#" class="text-gray-800 hover:text-[#B68C5A]">Blog</a>
-                    <a href="#" class="text-gray-800 hover:text-[#B68C5A]">Contact Us</a>
-                    <a href="#" class="bg-[#B68C5A] text-white px-4 py-2 rounded hover:bg-[#9a7548] transition-colors">
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-6 xl:space-x-10 text-lg xl:text-xl font-bold items-center">
+                    <a href="#" class="text-gray-500 hover:text-black">Home</a>
+                    <a href="#" class="text-gray-500 hover:text-black">Services</a>
+                    <a href="#" class="text-gray-500 hover:text-black">Cases</a>
+                    <a href="#" class="text-gray-500 hover:text-black">Blog</a>
+                    <a href="#" class="text-gray-500 hover:text-black">Contact Us</a>
+                    <a href="#"
+                        class="bg-[#B68C5A] text-white text-lg xl:text-xl font-bold px-4 py-2 xl:px-4 xl:py-3 lg:ml-10 xl:ml-40 rounded hover:bg-[#9a7548] transition-colors">
+                        Free Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#" class="text-gray-500 hover:text-black text-lg font-medium">Home</a>
+                    <a href="#" class="text-gray-500 hover:text-black text-lg font-medium">Services</a>
+                    <a href="#" class="text-gray-500 hover:text-black text-lg font-medium">Cases</a>
+                    <a href="#" class="text-gray-500 hover:text-black text-lg font-medium">Blog</a>
+                    <a href="#" class="text-gray-500 hover:text-black text-lg font-medium">Contact Us</a>
+                    <a href="#"
+                        class="bg-[#B68C5A] text-white text-lg font-medium px-4 py-2 rounded hover:bg-[#9a7548] transition-colors text-center">
                         Free Consultation
                     </a>
                 </div>
             </div>
         </nav>
 
+
+
         <!-- Hero Section -->
         <section class="h-[550px] py-20 mt-5 rounded-lg bg-cover bg-center bg-no-repeat flex items-center"
-            style="background-image: url('images/banner.png')">
+            style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('images/banner.png')">
             <div class="w-full">
                 <div class="max-w-2xl mx-auto bg-opacity-90 p-8 rounded-lg text-center">
                     <h1 class="hero-text text-5xl md:text-6xl font-bold text-white mb-6">
@@ -98,13 +129,15 @@
                     <div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
                         <input type="text" placeholder="Search your services"
                             class="flex-grow px-4 py-3 bg-white rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#9a7548]" />
-                        <button class="bg-[#B68C5A] text-white px-4 py-2 rounded hover:bg-[#9a7548] transition-colors">
+                        <button
+                            class="bg-[#B68C5A] text-white text-xl font-bold px-4 py-2 rounded hover:bg-[#9a7548] transition-colors">
                             Search
                         </button>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Service part -->
         <section class="py-20 container mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-12">
@@ -114,9 +147,9 @@
                     in some form, by injected humour.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- Business Law -->
-                <div class=" p-8 text-center hover:bg-gray-50 transition">
+                <div class="p-8 text-center hover:bg-gray-50 transition border-r border-b border-[#E7E7E7] ">
                     <img src="images/business.png" alt="Business Law" class="w-18 h-18 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-2">Business Law</h3>
                     <p class="text-gray-600 mb-4">There are many variations of passages of Lorem Ipsum available, but
@@ -126,7 +159,7 @@
                 </div>
 
                 <!-- Criminal Law -->
-                <div class=" p-8 text-center hover:bg-gray-50 transition">
+                <div class=" p-8 text-center hover:bg-gray-50 transition border-r border-b border-[#E7E7E7] ">
                     <img src="images/criminal.png" alt="Criminal Law" class="w-18 h-18 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-2">Criminal Law</h3>
                     <p class="text-gray-600 mb-4">There are many variations of passages of Lorem Ipsum available, but
@@ -136,7 +169,7 @@
                 </div>
 
                 <!-- Divorce Law -->
-                <div class=" p-8 text-center hover:bg-gray-50 transition">
+                <div class=" p-8 text-center hover:bg-gray-50 transition border-r border-b border-[#E7E7E7] ">
                     <img src="images/divorce.png" alt="Divorce Law" class="w-18 h-18 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-2">Divorce Law</h3>
                     <p class="text-gray-600 mb-4">There are many variations of passages of Lorem Ipsum available, but
@@ -146,7 +179,7 @@
                 </div>
 
                 <!-- Education Law -->
-                <div class=" p-8 text-center hover:bg-gray-50 transition">
+                <div class=" p-8 text-center hover:bg-gray-50 transition border-r border-[#E7E7E7] ">
                     <img src="images/education.png" alt="Education Law" class="w-18 h-18 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-2">Education Law</h3>
                     <p class="text-gray-600 mb-4">There are many variations of passages of Lorem Ipsum available, but
@@ -156,7 +189,7 @@
                 </div>
 
                 <!-- Child Support -->
-                <div class=" p-8 text-center hover:bg-gray-50 transition">
+                <div class=" p-8 text-center hover:bg-gray-50 transition  border-[#E7E7E7]">
                     <img src="images/child.png" alt="Child Support" class="w-18 h-18 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-2">Child Support</h3>
                     <p class="text-gray-600 mb-4">There are many variations of passages of Lorem Ipsum available, but
@@ -166,7 +199,7 @@
                 </div>
 
                 <!-- Tax Law -->
-                <div class=" p-8 text-center hover:bg-gray-50 transition">
+                <div class=" p-8 text-center hover:bg-gray-50 transition border-l border-[#E7E7E7]">
                     <img src="images/tax.png" alt="Tax Law" class="w-18 h-18 mx-auto mb-4">
                     <h3 class="text-xl font-bold mb-2">Tax Law</h3>
                     <p class="text-gray-600 mb-4">There are many variations of passages of Lorem Ipsum available, but
@@ -186,11 +219,11 @@
                     majority have suffered alteration in some form, by injected humour.</p>
             </div>
             <section class="py-30  bg-cover rounded-lg bg-center bg-no-repeat flex items-center"
-                style="background-image: url('images/banner.png')">
+                style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('images/banner.png')">
                 <div class="p-8 rounded-lg max-w-4xl mx-auto">
                     <div class="flex flex-col items-center">
                         <img src="images/photo.jpeg" alt="Client" class="w-16 h-16 rounded-full mb-4">
-                        <h4 class="font-bold text-white">Amdad Islam</h4>
+                        <h4 class="font-bold text-white text-2xl">Amdad Islam</h4>
                         <p class="text-white mb-4">UIX Designer</p>
                         <p class="text-white text-center">Contrary to popular belief, Lorem Ipsum is not simply random
                             text.
@@ -204,6 +237,7 @@
             </section>
         </section>
 
+
         <!-- FAQ Section -->
         <section class="py-20 container mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-12">
@@ -216,18 +250,18 @@
                 <div class="lg:w-1/2">
                     <div class="space-y-8">
                         <!-- FAQ Item -->
-                        <div class="border-none rounded-lg p-8 bg-gray-200">
+                        <div class="border-none rounded-lg p-9 bg-gray-100">
                             <h3 class="font-bold text-2xl">1. Are application fee waivers available?</h3>
                             <p class="text-gray">There are many variations of passages of Lorem Ipsum available, but the
                                 majority have suffered alteration in some form, by injected humour.</p>
                         </div>
-                        <div class="border-none rounded-lg p-8 bg-gray-200">
+                        <div class="border-none rounded-lg p-9 bg-gray-100">
                             <h3 class="font-bold text-2xl">1. Are application fee waivers available?</h3>
                         </div>
-                        <div class="border-none rounded-lg p-8 bg-gray-200">
+                        <div class="border-none rounded-lg p-9 bg-gray-100">
                             <h3 class="font-bold text-2xl">1. Are application fee waivers available?</h3>
                         </div>
-                        <div class="border-none rounded-lg p-8 bg-gray-200">
+                        <div class="border-none rounded-lg p-9 bg-gray-100">
                             <h3 class="font-bold text-2xl">1. Are application fee waivers available?</h3>
                         </div>
                     </div>
@@ -248,32 +282,32 @@
                 </div>
 
                 <div class="flex flex-col lg:flex-row gap-8">
-                    <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-0.5">
+                    <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2">
                         <!-- Address -->
-                        <div class="bg-gray-100 p-8 rounded-lg text-center">
+                        <div class="bg-gray-100 p-8 text-center border-r border-b border-[#E7E7E7]">
                             <img src="images/location.png" alt="Address" class="w-12 h-12 mx-auto mb-4">
-                            <h3 class="font-bold mb-2">Address</h3>
+                            <h3 class="font-bold text-2xl mb-2">Address</h3>
                             <p class="text-gray-600">A108 Adam Street,<br>New York, NY 535022</p>
                         </div>
 
                         <!-- Call Us -->
-                        <div class="bg-gray-100 p-8 rounded-lg text-center">
+                        <div class="bg-gray-100 p-8 text-center">
                             <img src="images/call.png" alt="Call" class="w-12 h-12 mx-auto mb-4">
-                            <h3 class="font-bold mb-2">Call Us</h3>
+                            <h3 class="font-bold text-2xl mb-2">Call Us</h3>
                             <p class="text-gray-600">+88 01750 00 00 00<br>+88 01750 00 00 00</p>
                         </div>
 
                         <!-- Working Hours -->
-                        <div class="bg-gray-100 p-8 rounded-lg text-center">
+                        <div class="bg-gray-100 p-8 text-center border-r border-[#E7E7E7]">
                             <img src="images/time.png" alt="Time" class="w-12 h-12 mx-auto mb-4">
-                            <h3 class="font-bold mb-2">Working Hours</h3>
+                            <h3 class="font-bold text-2xl mb-2">Working Hours</h3>
                             <p class="text-gray-600">Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</p>
                         </div>
 
                         <!-- Email Us -->
-                        <div class="bg-gray-100 p-8 rounded-lg text-center">
+                        <div class="bg-gray-100 p-8 text-center border-t border-[#E7E7E7]">
                             <img src="images/email.png" alt="Email" class="w-12 h-12 mx-auto mb-4">
-                            <h3 class="font-bold mb-2">Email Us</h3>
+                            <h3 class="font-bold text-2xl mb-2">Email Us</h3>
                             <p class="text-gray-600">info@gmail.com<br>info@gmail.com</p>
                         </div>
                     </div>
@@ -289,7 +323,7 @@
                             <textarea placeholder="Your Message"
                                 class="w-full px-4 py-3 rounded border border-none bg-gray-100 h-32"></textarea>
                             <button type="submit"
-                                class="bg-[#B68C5A] text-white px-6 py-3 rounded hover:bg-[#9a7548] w-full">Send
+                                class="bg-[#B68C5A] text-white text-2xl px-6 py-3 rounded hover:bg-[#9a7548] w-full">Send
                                 Message</button>
                         </form>
                     </div>
@@ -345,7 +379,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
