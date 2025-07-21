@@ -13,12 +13,11 @@ A professional and responsive **legal service landing page** built using **HTML*
 - ✅ Scroll animations and icons using Tailwind CSS
 - ✅ Lightweight and fast performance
 
----
 
 ## 🛠️ Technologies Used
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,tailwindCss" alt="Tech Stack" width="400"/>
+  <img src="https://skillicons.dev/icons?i=html,tailwindcss" alt="Tech Stack" width="100"/>
 </p>
 
 
