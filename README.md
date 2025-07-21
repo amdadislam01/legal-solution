@@ -23,4 +23,4 @@ A professional and responsive **legal service landing page** built using **HTML*
 
 ## 📸 Screenshot
 
-  <img src="https://i.postimg.cc/vBbtP9q0/screencapture-127-0-0-1-5500-index-html-2025-07-21-01-16-58.png" alt="" width="1000"/>
+  <img src="https://i.postimg.cc/zvRvK2C6/screencapture-amdadislam01-github-io-legal-solution-2025-07-21-22-10-35.png" alt="" width="1000"/>
