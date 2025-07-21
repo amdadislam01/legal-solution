@@ -5,8 +5,6 @@ A professional and responsive **legal service landing page** built using **HTML*
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://amdadislam01.github.io/legal-solution/)
 [![GitHub Repo](https://img.shields.io/badge/💻_Source_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amdadislam01/legal-solution)
 
----
-
 ## ✨ Features
 
 - ✅ Clean and modern legal service layout
