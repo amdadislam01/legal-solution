@@ -17,7 +17,7 @@ A professional and responsive **legal service landing page** built using **HTML*
 ## 🛠️ Technologies Used
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,tailwindcss" alt="Tech Stack" width="100"/>
+  <img src="https://skillicons.dev/icons?i=html,css,tailwindcss" alt="Tech Stack" width="320"/>
 </p>
 
 
